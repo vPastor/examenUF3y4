@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= "Lista de Alquileres"
+  table(style='width:100%' border='1')
+    th Dias
+    th Coche
+    th Cliente
+    th Precio
+    th Opciones
+    each rent in rents
+      tr
+        td
+        td
+        td
+        td
+        td
+          a(href=`/rent/delete/${rent.id}`) Borrar Alquiler
